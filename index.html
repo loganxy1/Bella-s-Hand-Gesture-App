@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title> Hand Gesture Identifier </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+
+    <body style="background-color:plum; color:white;">
+        <center>
+            <br>
+            <h2 style="background-color:cadetblue; border-radius:15px; width:500px;"> <br>
+                Gesture Web App
+                <br>
+                <br> 
+                &#128076;
+                &#128077;
+                &#9996;
+                &#9994;
+                &#128079;
+                &#129304;
+                <br>
+                <br>
+            </h2>
+            <br>
+            <hr>
+            <br>
+            <h3> Take a Selfie Of a Gesture to Know About It's Meaning </h3>
+            <br>
+            <hr>
+            <br>
+            <label> The Model is Trained on the Following Gestures - </label>
+            <br>
+            <hr>
+            <br>
+            <label style="font-size:35px;"> &#128076; | &#128077; | &#9996; </label>
+            <br>
+            <hr>
+            <br>
+            <label class="btn btn-info" style="border-radius:15px;;"> Prediction </label>
+            <br>
+            <label id="gesture_name"> </label>
+            <br>
+            <hr>
+            <br>
+            <label class="btn btn-success" style="border-radius:15px;"> Webcam View - </label>
+            <br>
+            <br>
+            <div id="camera" style="border-color:white; border-style:dashed; width:500px;">
+            <br>
+            </div>
+            <br>
+            <button type="button" class="btn btn-info" onclick="snapshot()"> Capture Image </button>
+            <br>
+            <hr>
+            <br>
+            <label class="btn btn-success" style="border-radius:15px;"> Snapshot - </label>
+            <br>
+            <br>
+            <div id="result" style="border-color:white; border-style:dashed; width:500px;">
+            <br>
+            </div>
+            <br>
+            <button type="button" class="btn btn-info" onclick="snapshot()"> Predict Gesture </button>
+            <br>
+            <hr>
+            <br>
+            <label style="font-size:20px;"> By: Bella Kohli </label>
+            <br>
+            <hr>
+            <br>
+        </center>
+        <script src="main.js"> </script>
+    </body>
+</html>
